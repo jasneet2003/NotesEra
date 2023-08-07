@@ -10,7 +10,7 @@ const semesters = {
   document.getElementById('year').addEventListener('change', function() {
     const selectedYear = document.getElementById('year').value;
     const semesterDropdown = document.getElementById('semester');
-    semesterDropdown.innerHTML = '<option value="all">All Semesters</option>';
+    semesterDropdown.innerHTML = '<option value="all">Semester</option>';
     if (selectedYear !== 'all') {
       semesters[selectedYear].forEach(sem => {
         const option = document.createElement('option');

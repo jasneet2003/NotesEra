@@ -16,8 +16,10 @@ body {
 }
 
 .container {
-  max-width: 1000px; /* Increase the max-width to make the form bigger */
-  width: 80%; /* Set a specific width to center the form on the screen */
+  max-width: 1000px;
+  /* Increase the max-width to make the form bigger */
+  width: 80%;
+  /* Set a specific width to center the form on the screen */
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -113,17 +115,48 @@ form .submit-btn:hover {
   }
 }
 
-#dropdown-container{
+#dropdown-container {
   background-color: paleturquoise;
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.input-group{
+.input-group {
   background-color: #ccc;
   display: inline-block;
   margin: 50px;
   margin: auto;
   padding: 20px;
+  border-radius: 10px;
+}
+
+.input-group-checkbox p {
+  display: inline-block;
+}
+
+.input-group-checkbox div {
+  display: flex;
+  float: right;
+}
+
+.gap{
+margin: 0 20px;
+}
+
+.checkbox-dabba {
+  margin: 0 7px;
+}
+
+.button-div {
+  align-items: center;
+  padding: 50px;
+  margin: auto;
+}
+
+#submitBtn {
+  margin: auto;
+ background-color: aqua;
+ padding: 20px 70px;
+ border-radius: 15px;
 }

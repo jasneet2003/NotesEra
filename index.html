@@ -16,10 +16,10 @@
       <div class="input-group">
         <!-- <label for="college">Select College:</label> -->
         <select id="college">
-          <option value="all">All Colleges</option>
-          <option value="medicaps">Medicaps University</option>
-          <option value="ips">IPS Academy</option>
-          <option value="vaishnav">Vaishnav College</option>
+          <option value="all">Colleges</option>
+          <option value="medicaps">Medicaps</option>
+          <option value="ips">IPS</option>
+          <option value="vaishnav">Vaishnav</option>
           <option value="acropolis">Acropolis</option>
           <option value="iit">IIT</option>
         </select>
@@ -27,7 +27,7 @@
       <div class="input-group">
         <!-- <label for="year">Select Year:</label> -->
         <select id="year">
-          <option value="all">All Years</option>
+          <option value="all">Year</option>
           <option value="1">1st Year</option>
           <option value="2">2nd Year</option>
           <option value="3">3rd Year</option>
@@ -37,19 +37,26 @@
       <div class="input-group">
         <!-- <label for="semester">Select Semester:</label> -->
         <select id="semester">
-          <option value="all">All Semesters</option>
+          <option value="all">Semester</option>
         </select>
       </div>
     </div>
-    <div class="input-group">
+    <div class="input-group-checkbox">
       <p>Select what you are looking for:</p>
-      <input type="checkbox" id="notes" value="notes">
-      <label for="notes">Notes</label>
-      <input type="checkbox" id="papers" value="papers">
-      <label for="papers">Previous Year Papers</label>
+      <div>
+        <div class="gap">
+          <input class="checkbox-dabba" type="checkbox" id="notes" value="notes">
+          <label for="notes">Notes</label>
+        </div>
+        <div class="gap">
+          <input class="checkbox-dabba" type="checkbox" id="papers" value="papers">
+          <label for="papers">Previous Year Papers</label>
+        </div>
+      </div>
     </div>
-    <button id="submitBtn">Submit</button>
-
+    <div class="button-div">
+      <button id="submitBtn">Submit</button>
+    </div>
     <div id="coursesList">
       <!-- The list of matching courses will be displayed here -->
     </div>

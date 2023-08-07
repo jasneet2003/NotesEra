@@ -112,3 +112,17 @@ form .submit-btn:hover {
     width: calc(100% - 20px);
   }
 }
+
+#dropdown-container{
+  background-color: paleturquoise;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.input-group{
+  display: inline-block;
+  margin: 50px;
+  margin: auto;
+  padding: 20px;
+}

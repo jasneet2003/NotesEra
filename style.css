@@ -121,6 +121,7 @@ form .submit-btn:hover {
 }
 
 .input-group{
+  background-color: #ccc;
   display: inline-block;
   margin: 50px;
   margin: auto;

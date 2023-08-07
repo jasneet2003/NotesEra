@@ -1,0 +1,114 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px; /* Increase the max-width to make the form bigger */
+  width: 80%; /* Set a specific width to center the form on the screen */
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6c63ff;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Customizing the dropdown menu */
+form select {
+  appearance: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  cursor: pointer;
+}
+
+form select option {
+  padding: 10px;
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+form select:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+form input[type="checkbox"] {
+  width: auto;
+}
+
+/* Customizing the submit button */
+form .submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #6c63ff;
+  background-image: linear-gradient(45deg, #6c63ff, #574ecc);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+form .submit-btn:hover {
+  background-color: #574ecc;
+}
+
+#coursesList {
+  margin-top: 20px;
+}
+
+#coursesList ul {
+  list-style: none;
+}
+
+#coursesList li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  form label {
+    width: 100%;
+  }
+
+  form select,
+  form input[type="checkbox"] {
+    width: calc(100% - 20px);
+  }
+}

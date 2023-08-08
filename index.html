@@ -67,26 +67,30 @@
           <!-- Add other options as needed -->
         </ul>
       </div>
-    <div class="input-group-checkbox">
-      <p>Select what you are looking for:</p>
-      <div>
-        <div class="gap">
-          <input class="checkbox-dabba" type="checkbox" id="notes" value="notes">
-          <label for="notes">Notes</label>
-        </div>
-        <div class="gap">
-          <input class="checkbox-dabba" type="checkbox" id="papers" value="papers">
-          <label for="papers">Previous Year Papers</label>
+      <div class="input-group-checkbox">
+        <p>Select what you are looking for:</p>
+        <div class="checkbox-group">
+          <div class="gap">
+            <input class="checkbox-dabba" type="checkbox" id="notes" value="notes">
+            <label for="notes">Notes</label>
+          </div>
+          <div class="gap">
+            <input class="checkbox-dabba" type="checkbox" id="papers" value="papers">
+            <label for="papers">Previous Year Papers</label>
+          </div>
         </div>
       </div>
-    </div>
-    <button class="button">Send</button>
-
-  <div class="loader">
-    <div class="check">
-      <span class="check-one"></span>
-      <span class="check-two"></span>
-    </div>
+      
+      <div class="button-div">
+        <button id="submitBtn" class="button">Send</button>
+        <div class="loader">
+          <div class="check">
+            <span class="check-one"></span>
+            <span class="check-two"></span>
+          </div>
+        </div>
+      </div>
+      
   </div>
     <div id="coursesList">
       <!-- The list of matching courses will be displayed here -->

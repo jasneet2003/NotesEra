@@ -31,7 +31,7 @@ const semesters = {
     // Dummy values for courses
     const courses = [
       // First Year
-      { name: 'Introduction to Programming', college: 'all', year: '1', semester: '1', type: 'notes' },
+      { name: 'Introduction to Programming', college: 'medicaps', year: '1', semester: '1', type: 'notes' },
       { name: 'Mathematics for Computer Science', college: 'all', year: '1', semester: '1', type: 'notes' },
       { name: 'Digital Logic and Design', college: 'all', year: '1', semester: '1', type: 'notes' },
       { name: 'Computer Organization and Architecture', college: 'all', year: '1', semester: '1', type: 'notes' },

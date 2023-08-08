@@ -21,7 +21,7 @@ body {
   width: 80%;
   /* Set a specific width to center the form on the screen */
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #1F1D0D;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
@@ -133,6 +133,7 @@ form .submit-btn:hover {
 
 .input-group-checkbox p {
   display: inline-block;
+  margin-right: 10px;
 }
 
 .input-group-checkbox div {
@@ -151,7 +152,7 @@ margin: 0 20px;
 .button-div {
   align-items: center;
   padding: 50px;
-  margin: auto;
+  margin-top: 75px;
   text-align: center;
 }
 
@@ -200,7 +201,7 @@ body {
 }
 
 .select:hover {
-  background: #FF5740;
+  background: #cbff76;
 }
 
 .caret {
@@ -280,7 +281,7 @@ body {
   width: 200px;
   height: 36px;
   border-radius: 18px;
-  background-color: #1c89ff;
+  background-color: #a01e45;
   border: solid 1px transparent;
   color: #fff;
   font-size: 18px;

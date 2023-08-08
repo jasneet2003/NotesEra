@@ -107,3 +107,61 @@ const semesters = {
   // Trigger the change event on initial page load to populate the semester dropdown
   document.getElementById('year').dispatchEvent(new Event('change'));
   
+
+
+
+
+  // JavaScript for custom dropdown
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+  const select = dropdown.querySelector('.select');
+  const caret = dropdown.querySelector('.caret');
+  const menu = dropdown.querySelector('.menu');
+  const options = dropdown.querySelectorAll('.menu li');
+  const selected = dropdown.querySelector('.selected');
+
+  select.addEventListener('click', () => {
+    select.classList.toggle('select-clicked');
+    caret.classList.toggle('caret-rotate');
+    menu.classList.toggle('menu-open');
+  });
+
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      selected.innerText = option.innerText;
+      select.classList.remove('select-clicked');
+      caret.classList.remove('caret-rotate');
+      menu.classList.remove('menu-open');
+      options.forEach(option => {
+        option.classList.remove('active');
+      });
+      option.classList.add('active');
+    });
+  });
+});
+
+// Close the dropdown when the user clicks outside of it
+document.addEventListener('click', event => {
+  const isDropdown = event.target.closest('.dropdown');
+  if (!isDropdown) {
+    const menus = document.querySelectorAll('.menu');
+    menus.forEach(menu => menu.classList.remove('menu-open'));
+  }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.querySelector('.button');
+  const loader = document.querySelector('.loader');
+  const check = document.querySelector('.check');
+
+  btn.addEventListener('click', function () {
+    loader.classList.add('active');
+  });
+
+  loader.addEventListener('animationend', function () {
+    check.classList.add('active');
+  });
+});

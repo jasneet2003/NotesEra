@@ -13,34 +13,60 @@
     <h1>Welcome to Notes and Papers</h1>
     <!-- <p>Please select your college, year, semester, and what you are looking for:</p> -->
     <div id="dropdown-container">
-      <div class="input-group">
-        <!-- <label for="college">Select College:</label> -->
-        <select id="college">
-          <option value="all">Colleges</option>
-          <option value="medicaps">Medicaps</option>
-          <option value="ips">IPS</option>
-          <option value="vaishnav">Vaishnav</option>
-          <option value="acropolis">Acropolis</option>
-          <option value="iit">IIT</option>
-        </select>
+
+
+
+
+
+
+
+
+
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">Colleges</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu">
+          <li class="active">Medicaps</li>
+          <li>IPS Academy</li>
+          <li>Vaishnav</li>
+          <li>Acropolis</li>
+          <li>IIT</li>
+          <!-- Add other options as needed -->
+        </ul>
       </div>
-      <div class="input-group">
-        <!-- <label for="year">Select Year:</label> -->
-        <select id="year">
-          <option value="all">Year</option>
-          <option value="1">1st Year</option>
-          <option value="2">2nd Year</option>
-          <option value="3">3rd Year</option>
-          <option value="4">4th Year</option>
-        </select>
+
+
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">Year</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu">
+          <li class="active">1st Year</li>
+          <li>2nd Year</li>
+          <li>3rd Year</li>
+          <li>4th Year</li>
+          <!-- Add other options as needed -->
+        </ul>
       </div>
-      <div class="input-group">
-        <!-- <label for="semester">Select Semester:</label> -->
-        <select id="semester">
-          <option value="all">Semester</option>
-        </select>
+
+
+
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">Semester</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu">
+          <li class="active">1st Sem</li>
+          <li>2nd Year</li>
+          <li>3rd Year</li>
+          <li>4th Year</li>
+          <!-- Add other options as needed -->
+        </ul>
       </div>
-    </div>
     <div class="input-group-checkbox">
       <p>Select what you are looking for:</p>
       <div>
@@ -54,9 +80,14 @@
         </div>
       </div>
     </div>
-    <div class="button-div">
-      <button id="submitBtn">Submit</button>
+    <button class="button">Send</button>
+
+  <div class="loader">
+    <div class="check">
+      <span class="check-one"></span>
+      <span class="check-two"></span>
     </div>
+  </div>
     <div id="coursesList">
       <!-- The list of matching courses will be displayed here -->
     </div>
